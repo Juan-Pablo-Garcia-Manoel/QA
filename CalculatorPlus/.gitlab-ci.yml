@@ -1,0 +1,36 @@
+
+stages:         
+  - build
+  - test
+  - deploy
+
+criar_imagens:       
+  stage: build
+  tags:
+    - Runner
+  script:
+    - docker build -t JuanPGM/CalculatorPlus:1.0.0 app/.
+    - docker push -t JuanPGM/CalculatorPlus:1.0.0 app/.
+
+unit-test-job:   
+  stage: test    
+  script:
+    - echo "Running unit tests... This will take about 60 seconds."
+    - sleep 60
+    - echo "Code coverage is 90%"
+
+lint-test-job:   
+  stage: test    
+  script:
+    - echo "Linting code... This will take about 10 seconds."
+    - sleep 10
+    - echo "No lint issues found."
+
+deploy-job:      
+  stage: deploy
+  needs:
+      - criar_imagens  
+  tags:
+    - runner
+  script:
+   - docker run -dti --name CalculatorPlus -p 80:80 JuanPGM/CalculatorPlus:1.1.0/ 

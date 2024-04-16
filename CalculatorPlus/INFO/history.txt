@@ -1,0 +1,96 @@
+    1  sudo apt update
+    2  java
+    3*
+    4  sudo pico /etc/hostname 
+    5  cat  /etc/hostname *** mobile-Api
+    6  sudo reboot
+    7  sudo apt update
+    8  java
+    9  clear
+   10  ls
+   11  dir
+   12  ls
+   13  clear
+   14  java --version 18
+   15  java update
+   16  sudo apt java update
+   17  mysql
+   18  sudo apt install mysql-client-core-8.0
+   19  cat  /etc/hostname
+   20  sudo apt nmap
+   21  sudo apt install nmap
+   22  history
+   23  sudo mysql -uroot
+   24  sudo mysql --uroot
+   25  sudo mysql -uroot
+   26  mysql
+   27  sudo apt update
+   28  mysql
+   29  sudo mysql -uroot
+   30  sudo su  mysql -uroot
+   31  sudo mysql -root
+   32  sudo mysql -oroot
+   33  sudo mysqlroot
+   34  sudo mysql -o
+   35  cls
+   36  clear
+   37  sudo mysql -uroot
+   38  sudo apt install mysql-server
+   39  sudo mysql -uroot
+   40  java -jar webtask-0.0.1-SNAPSHOT.jar -DPROFILE=homolog
+   41  java -DPROFILE=homolog -jar webtask-0.0.1-SNAPSHOT.jar
+   42  sudo java jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   43  java jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   44  clear
+   45  sudo java -jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   46  java jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   47  java -jar webtask-0.0.1-SNAPSHOT.jar
+   48  java jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   49  history
+   50  clear
+   51  java -jar webtask-0.0.1-SNAPSHOT.JAR
+   52  java -jar webtask-0.0.1-SNAPSHOT.jar
+   53  sudo java -jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   54  sudo java -jar -DPROFILE=dev webtask-0.0.1-SNAPSHOT.jar
+   55  clear
+   56  sudo java -jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   57  java -jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   58  sudo su java -jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   59  sudo java -jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   60  sudo kill all java
+   61  sudo killall java
+   62  sudo java -jar -DPROFILE=homolog webtask-0.0.1-SNAPSHOT.jar
+   63  history
+########################################################
+
+ 1  dir
+    2  ls
+    3  clear
+    4  info
+    5  clear
+    6  curl -fsSL https://ger.docker.com - get-docker.sh
+    7  curl -fsSL https://ger.docker.com -o get-docker.sh
+    8  ls
+    9  curl -fsSL https://get.docker.com -o get-docker.sh
+   10  clear
+   11  ls
+   12  sh get-docker.com
+   13  sh get-docker.sh
+   14  clear
+   15  sh get-docker.sh
+   16  sudo docker -v
+   17  clear
+   18  sudo docker run -d --name gitlab-runner --restart always   -v /srv/gitlab-runner/config:/etc/gitlab-runner   -v /var/run/docker.sock:/var/run/docker.sock   gitlab/gitlab-runner:latest
+   19  sudo docker ps
+   20  sudo docker run --rm -it -v /srv/gitlab-runner/config:/etc/gitlab-runner gitlab/gitlab-runner register
+   21  history
+
+
+#########################################
+ FROM adoptopenjdk/openjdk:alpine-jre
+
+COPY  /home/app.jar
+
+jar cfe CalculatorPlus-1.0.0.jar br.edu.calc.plus.CalculatorPlusApplication -C diretorio/do/codigo br.edu.calc
+
+
